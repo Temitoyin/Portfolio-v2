@@ -1,0 +1,249 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  background-repeat: no-repeat;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem;
+  background-color: black;
+  color: white;
+}
+
+nav p {
+  font-size: 1.7rem;
+  margin: 0.8rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  text-transform: uppercase;
+  padding-left: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 90vh;
+}
+
+header .header-background {
+  z-index: 1;
+  height: 100%;
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 0.5rem;
+  /* blur */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+header .header-text {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.about {
+  height: 70vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 0 2rem;
+  margin-top: 5rem;
+  margin: 5rem 10rem 0 10rem;
+}
+
+.about .about-right {
+  line-height: 2rem;
+}
+
+.about .about-right h1 {
+  text-transform: capitalize;
+}
+
+.proficiency {
+  margin: 0rem 10rem 0 10rem;
+}
+
+.proficiency .proficiency-header {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.proficiency .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.proficiency .categories h3 {
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.proficiency .categories ul {
+  list-style-type: disc;
+  padding-left: 0;
+}
+
+.proficiency .categories ul li {
+  display: block;
+  padding: 1rem 0 1rem 0;
+}
+
+.contact {
+  height: 50vh;
+  margin: 5rem 10rem 0 10rem;
+}
+
+.contact .contact-header {
+  margin-bottom: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .contact-header p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.contact .socialmedia-icons h5 {
+  margin: 0;
+}
+
+.contact .socialmedia-icons a {
+  text-decoration: none;
+}
+
+.contact .contact-content {
+  height: 40vh;
+  margin: 0 17rem;
+  text-align: center;
+  border: black 1px solid;
+}
+
+.contact .contact-content p {
+  font-size: 1.3rem;
+}
+
+.contact .form-container {
+  margin: 0 auto;
+  width: 500px;
+  clear: both;
+}
+
+.contact .form-container form label {
+  float: left;
+}
+
+.contact .form-container form input {
+  border: black solid 1px;
+  height: 1.5rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  clear: both;
+}
+
+.contact .form-container form textarea {
+  border: black solid 1px;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  clear: both;
+}
+
+footer {
+  height: 4.8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+footer .footer-copyright {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+footer .socialmedia-icons i {
+  color: white;
+}
+
+.socialmedia-icons a {
+  padding: 1rem;
+  font-size: 1rem;
+  color: black;
+}
+
+.anchor-btn {
+  border: 1px solid black;
+  background-color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: black;
+}
+
+/* Utility */
+button {
+  border: black solid 1px;
+  background-color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+/*# sourceMappingURL=style.css.map */

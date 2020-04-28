@@ -25,11 +25,12 @@
       href="./images/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
     <title>Temitoyin Ayorinde:Frontend developer</title>
   </head>
   <body>
     <nav>
-      <img src="./images/logo.png" alt="The logo" />
+      <p>Toyin</p>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Porfolio</a></li>
@@ -56,7 +57,7 @@
           </div>
           <div class="about-right">
             <hr />
-            <h1 id="about">About me</h1>
+            <h1 class="about-heading">About me</h1>
             <p>
               I'm a sotfware developer with experience in creating applications
               using HTML, CSS and JavaScript. I like learning about other
@@ -70,7 +71,7 @@
               want to work with me, feel free to
               <a href="#contact">get in touch</a>
             </p>
-            <a href="#portfolio">Go to portfolio</a>
+            <a class="anchor-btn" href="#portfolio">Go to portfolio</a>
           </div>
         </div>
       </section>
@@ -114,7 +115,7 @@
           </div>
         </div>
       </section>
-      <section id="portfolio">
+      <!-- <section id="portfolio">
         <div class="portfolio">
           <div class="portfolio-heading">
             <h4>Portfolio</h4>
@@ -126,74 +127,70 @@
             <div class="portfolio_ls"></div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section id="contact">
         <div class="contact">
-          <div class="contact-grid">
-            <div class="contact-header">
-              <p>Let's stay connected</p>
+          <div class="contact-header">
+            <p>Let's stay connected</p>
+            <div class="socialmedia-icons">
+              <a
+                href="https://twitter.com/toyin_ayorinde"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-2x fa-twitter-square"></i>
+                Twitter
+              </a>
+              <a
+                href="https://www.linkedin.com/in/toyin-ayorinde-55a859101/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-2x fa-linkedin"></i>
+                Linkedin
+              </a>
+              <a
+                href="https://github.com/Temitoyin"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-2x fa-github"></i>
+                GitHub
+              </a>
+              <a
+                href="https://codepen.io/temitoyin"
+                target="blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-2x fa-codepen"></i>
+                Codepen
+              </a>
             </div>
-            <hr />
-            <a href="#contact">contact me</a>
           </div>
           <div class="contact-content">
-            <div class="contact-left">
-              <p>
-                I'm currently availble for web development projects. If you have
-                a wonderful idea that you are looking to implement, don't
-                hesitate to get in touch
-              </p>
+            <p>
+              I'm currently availble for web development projects. If you have a
+              wonderful idea that you are looking to implement, don't hesitate
+              to get in touch
+            </p>
+            <div class="form-container">
               <form>
                 <label for="name">Name</label>
-                <input type="text" name="name" />
+                <input type="text" name="name" placeholder="Name" />
                 <label for="email">Email</label>
-                <input type="text " name="email" />
+                <input type="text " name="email" placeholder="Email" />
                 <label for="message">Message</label>
-                <textarea id="message" rows="4" cols="50"> </textarea>
+                <textarea id="message" rows="4" cols="50" placeholder="Message">
+                </textarea>
+                <button>Contact</button>
               </form>
-            </div>
-            <div class="contact-right">
-              <h5>Connect on Social Media</h5>
-              <div class="socialmedia-icons">
-                <a
-                  href="https://twitter.com/toyin_ayorinde"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-2x fa-twitter-square"></i>
-                  Twitter
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/toyin-ayorinde-55a859101/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-2x fa-linkedin"></i>
-                  Linkedin
-                </a>
-                <a
-                  href="https://github.com/Temitoyin"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-2x fa-github"></i>
-                  GitHub
-                </a>
-                <a
-                  href="https://codepen.io/temitoyin"
-                  target="blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-2x fa-codepen"></i>
-                  Codepen
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
+      <div class="footer-copyright">Temitoyin © 2020 Copyright</div>
       <div class="socialmedia-icons">
         <a
           href="https://twitter.com/toyin_ayorinde"
@@ -217,5 +214,9 @@
         </a>
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/291c73dd15.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
