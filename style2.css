@@ -1,7 +1,6 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
 }
 
 *,
@@ -18,6 +17,7 @@ a {
 
 body {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -35,7 +35,7 @@ nav {
 }
 
 nav p {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   margin: 0.8rem 0;
 }
 
@@ -44,9 +44,10 @@ nav ul {
 }
 
 nav ul li {
+  font-size: 0.8rem;
   display: inline;
   text-transform: uppercase;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 nav ul li a {
@@ -61,9 +62,9 @@ header {
 header .header-background {
   z-index: 1;
   height: 100%;
-  background-image: url(./images/background.jpg);
+  width: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   margin-top: 0.5rem;
   /* blur */
   filter: blur(2px);
@@ -71,7 +72,7 @@ header .header-background {
 }
 
 header .header-text {
-  font-size: 3rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -84,18 +85,23 @@ header .header-text {
 }
 
 .about {
-  height: 70vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  gap: 0 2rem;
-  margin-top: 5rem;
-  margin: 5rem 10rem 0 10rem;
+  height: 110vh;
+  margin: 0rem 2rem;
+}
+
+.about .about-left img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70%;
+  width: 100%;
 }
 
 .about .about-right {
-  line-height: 2rem;
+  line-height: 1.4rem;
 }
 
 .about .about-right h1 {
@@ -103,13 +109,18 @@ header .header-text {
 }
 
 .proficiency {
-  margin: 0rem 10rem 0 10rem;
+  margin: 0rem 2rem;
+  margin-top: 12rem;
 }
 
 .proficiency .proficiency-header {
   text-align: left;
   text-transform: capitalize;
   font-size: 1.5rem;
+}
+
+.proficiency h2 {
+  margin: 1rem 0;
 }
 
 .proficiency .categories {
@@ -138,21 +149,21 @@ header .header-text {
 
 .contact {
   height: 50vh;
-  margin: 5rem 10rem 0 10rem;
+  margin: 0rem 2rem 0 2rem;
 }
 
 .contact .contact-header {
   margin-bottom: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .contact .contact-header p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0;
 }
 
@@ -165,10 +176,9 @@ header .header-text {
 }
 
 .contact .contact-content {
-  height: 40vh;
-  margin: 0 17rem;
+  height: 50vh;
+  margin: 0rem 2rem;
   text-align: center;
-  border: black 1px solid;
 }
 
 .contact .contact-content p {
@@ -177,7 +187,7 @@ header .header-text {
 
 .contact .form-container {
   margin: 0 auto;
-  width: 500px;
+  width: 100%;
   clear: both;
 }
 
@@ -187,33 +197,36 @@ header .header-text {
 
 .contact .form-container form input {
   border: black solid 1px;
+  border-radius: 8px;
   height: 1.5rem;
-  margin-bottom: 0.8rem;
+  margin: 0 0 0.8rem 0;
   width: 100%;
   clear: both;
 }
 
 .contact .form-container form textarea {
   border: black solid 1px;
+  border-radius: 8px;
   margin-bottom: 0.8rem;
   width: 100%;
   clear: both;
 }
 
 footer {
+  margin-top: 10rem;
   height: 4.8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: white;
   background-color: black;
 }
 
 footer .footer-copyright {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   text-align: center;
 }
 
@@ -222,9 +235,17 @@ footer .socialmedia-icons i {
 }
 
 .socialmedia-icons a {
-  padding: 1rem;
   font-size: 1rem;
   color: black;
+}
+
+button {
+  border: black solid 1px;
+  background-color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 
 .anchor-btn {
@@ -237,13 +258,89 @@ footer .socialmedia-icons i {
   color: black;
 }
 
-/* Utility */
-button {
-  border: black solid 1px;
-  background-color: white;
-  padding: 1rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.85rem;
+/* Media queries */
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  nav p {
+    font-size: 1.7rem;
+  }
+  nav ul li {
+    font-size: 1rem;
+  }
+  header .header-background {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+  }
+  header .header-text {
+    font-size: 3rem;
+  }
+  .about {
+    height: 70vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    gap: 0 2rem;
+    margin: 5rem 10rem 0 10rem;
+  }
+  .about .about-right {
+    line-height: 2rem;
+  }
+  .proficiency {
+    margin: 0rem 10rem 0 10rem;
+  }
+  .contact {
+    height: 50vh;
+    margin: 5rem 10rem 0 10rem;
+  }
+  .contact .contact-header {
+    margin-bottom: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact .contact-header p {
+    padding-right: 1rem;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .contact .socialmedia-icons h5 {
+    margin: 0;
+  }
+  .contact .socialmedia-icons a {
+    text-decoration: none;
+  }
+  .contact .contact-content {
+    height: 40vh;
+    margin: 0 17rem;
+    text-align: center;
+    border: black 1px solid;
+  }
+  .contact .contact-content p {
+    font-size: 1.3rem;
+  }
+  .contact .form-container {
+    width: 500px;
+  }
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-copyright {
+    padding-right: 1rem;
+  }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 600px) {
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=style2.css.map */
