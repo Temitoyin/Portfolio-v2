@@ -30,8 +30,8 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 1rem;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 
 nav p {
@@ -80,7 +80,7 @@ header .header-text {
           transform: translate(-50%, -50%);
   z-index: 2;
   width: 80%;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
 }
 
@@ -96,7 +96,7 @@ header .header-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 70%;
+  height: 90%;
   width: 100%;
 }
 
@@ -109,8 +109,8 @@ header .header-text {
 }
 
 .proficiency {
-  margin: 0rem 2rem;
-  margin-top: 12rem;
+  margin: 0 2rem;
+  margin-top: 10rem;
 }
 
 .proficiency .proficiency-header {
@@ -149,7 +149,7 @@ header .header-text {
 
 .contact {
   height: 50vh;
-  margin: 0rem 2rem 0 2rem;
+  margin: 0 2rem;
 }
 
 .contact .contact-header {
@@ -196,8 +196,8 @@ header .header-text {
 }
 
 .contact .form-container form input {
-  border: black solid 1px;
-  border-radius: 8px;
+  border: #000 solid 0.0625rem;
+  border-radius: 0.5rem;
   height: 1.5rem;
   margin: 0 0 0.8rem 0;
   width: 100%;
@@ -205,8 +205,8 @@ header .header-text {
 }
 
 .contact .form-container form textarea {
-  border: black solid 1px;
-  border-radius: 8px;
+  border: #000 solid 0.0625rem;
+  border-radius: 0.5rem;
   margin-bottom: 0.8rem;
   width: 100%;
   clear: both;
@@ -222,7 +222,7 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   color: white;
-  background-color: black;
+  background-color: #000;
 }
 
 footer .footer-copyright {
@@ -231,17 +231,17 @@ footer .footer-copyright {
 }
 
 footer .socialmedia-icons i {
-  color: white;
+  color: #fff;
 }
 
 .socialmedia-icons a {
   font-size: 1rem;
-  color: black;
+  color: #000;
 }
 
 button {
-  border: black solid 1px;
-  background-color: white;
+  border: #000 solid 0.0625rem;
+  background-color: #fff;
   padding: 1rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -249,8 +249,8 @@ button {
 }
 
 .anchor-btn {
-  border: 1px solid black;
-  background-color: white;
+  border: 0.0625rem solid #000;
+  background-color: #fff;
   padding: 1rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -276,14 +276,25 @@ button {
   }
   .about {
     height: 70vh;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 0 2rem;
     margin: 5rem 10rem 0 10rem;
   }
+  .about .about-left {
+    width: 100%;
+    height: 80%;
+  }
   .about .about-right {
+    padding-left: 2rem;
     line-height: 2rem;
   }
   .proficiency {
@@ -317,13 +328,13 @@ button {
     height: 40vh;
     margin: 0 17rem;
     text-align: center;
-    border: black 1px solid;
+    border: #000 0.0625rem solid;
   }
   .contact .contact-content p {
     font-size: 1.3rem;
   }
   .contact .form-container {
-    width: 500px;
+    width: 31.25rem;
   }
   footer {
     -webkit-box-pack: center;
@@ -337,10 +348,17 @@ button {
 
 @media only screen and (max-width: 600px) {
   .about {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .about-left img {
+    height: 100%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style2.css.map */

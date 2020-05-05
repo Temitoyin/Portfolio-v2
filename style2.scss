@@ -21,8 +21,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   p {
     font-size: 1.4rem;
     margin: 0.8rem 0;
@@ -48,7 +48,6 @@ header {
     z-index: 1;
     height: 100%;
     width: 100%;
-    // background-image: url(./images/background.jpg);
     background-position: center;
     background-size: contain;
     margin-top: 0.5rem;
@@ -64,7 +63,7 @@ header {
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 80%;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
   }
 }
@@ -76,13 +75,12 @@ header {
     img {
       display: flex;
       justify-content: center;
-      height: 70%;
+      height: 90%;
       width: 100%;
     }
   }
   .about-right {
     line-height: 1.4rem;
-    // overflow: hidden;
     h1 {
       text-transform: capitalize;
     }
@@ -90,8 +88,8 @@ header {
 }
 // Peoficiency
 .proficiency {
-  margin: 0rem 2rem;
-  margin-top: 12rem;
+  margin: 0 2rem;
+  margin-top: 10rem;
   .proficiency-header {
     text-align: left;
     text-transform: capitalize;
@@ -120,7 +118,7 @@ header {
 // Contact
 .contact {
   height: 50vh;
-  margin: 0rem 2rem 0 2rem;
+  margin: 0 2rem;
   .contact-header {
     margin-bottom: 1rem;
     margin-top: 5rem;
@@ -143,7 +141,6 @@ header {
     height: 50vh;
     margin: 0rem 2rem;
     text-align: center;
-    // border: black 1px solid;
     p {
       font-size: 1.3rem;
     }
@@ -157,18 +154,17 @@ header {
         float: left;
       }
       input {
-        border: black solid 1px;
-        border-radius: 8px;
+        border: #000 solid 0.0625rem;
+        border-radius: 0.5rem;
         height: 1.5rem;
         margin: 0 0 0.8rem 0;
-        // padding: 0 0.5rem 0 0.5rem;
 
         width: 100%;
         clear: both;
       }
       textarea {
-        border: black solid 1px;
-        border-radius: 8px;
+        border: #000 solid 0.0625rem;
+        border-radius: 0.5rem;
         margin-bottom: 0.8rem;
         width: 100%;
         clear: both;
@@ -183,14 +179,14 @@ footer {
   display: flex;
   justify-content: space-evenly;
   color: white;
-  background-color: black;
+  background-color: #000;
   .footer-copyright {
     padding-top: 0.5rem;
     text-align: center;
   }
   .socialmedia-icons {
     i {
-      color: white;
+      color: #fff;
     }
   }
 }
@@ -199,22 +195,22 @@ footer {
 .socialmedia-icons {
   a {
     font-size: 1rem;
-    color: black;
+    color: #000;
   }
 }
 
 // Buttons
 button {
-  border: black solid 1px;
-  background-color: white;
+  border: #000 solid 0.0625rem;
+  background-color: #fff;
   padding: 1rem;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.85rem;
 }
 .anchor-btn {
-  border: 1px solid black;
-  background-color: white;
+  border: 0.0625rem solid #000;
+  background-color: #fff;
   padding: 1rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -245,11 +241,17 @@ button {
   }
   .about {
     height: 70vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 0 2rem;
     margin: 5rem 10rem 0 10rem;
+    .about-left {
+      width: 100%;
+      height: 80%;
+    }
     .about-right {
+      padding-left: 2rem;
       line-height: 2rem;
     }
   }
@@ -281,13 +283,13 @@ button {
       height: 40vh;
       margin: 0 17rem;
       text-align: center;
-      border: black 1px solid;
+      border: #000 0.0625rem solid;
       p {
         font-size: 1.3rem;
       }
     }
     .form-container {
-      width: 500px;
+      width: 31.25rem;
     }
   }
   footer {
@@ -301,7 +303,13 @@ button {
 // Mobile
 @media only screen and (max-width: 600px) {
   .about {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    .about-left {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 }
