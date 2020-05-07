@@ -22,7 +22,7 @@ body {
   padding: 0;
 }
 
-nav {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,32 +34,32 @@ nav {
   color: #fff;
 }
 
-nav p {
+.navigation p {
   font-size: 1.4rem;
   margin: 0.8rem 0;
 }
 
-nav ul {
+.navigation ul {
   list-style-type: none;
 }
 
-nav ul li {
+.navigation ul li {
   font-size: 0.8rem;
   display: inline;
   text-transform: uppercase;
   padding-left: 1rem;
 }
 
-nav ul li a {
+.navigation ul li a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
-header {
+.header {
   height: 90vh;
 }
 
-header .header-background {
+.header .header-background {
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -71,7 +71,7 @@ header .header-background {
   -webkit-filter: blur(2px);
 }
 
-header .header-text {
+.header .header-text {
   font-size: 1.5rem;
   position: absolute;
   top: 50%;
@@ -212,7 +212,7 @@ header .header-text {
   clear: both;
 }
 
-footer {
+.footer {
   margin-top: 10rem;
   height: 4.8vh;
   display: -webkit-box;
@@ -221,16 +221,16 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: white;
+  color: #fff;
   background-color: #000;
 }
 
-footer .footer-copyright {
+.footer .footer-copyright {
   padding-top: 0.5rem;
   text-align: center;
 }
 
-footer .socialmedia-icons i {
+.footer .socialmedia-icons i {
   color: #fff;
 }
 
@@ -261,17 +261,17 @@ button {
 /* Media queries */
 /* Desktop */
 @media only screen and (min-width: 992px) {
-  nav p {
+  .navigation p {
     font-size: 1.7rem;
   }
-  nav ul li {
+  .navigation ul li {
     font-size: 1rem;
   }
-  header .header-background {
+  .header .header-background {
     background-image: url(./images/background.jpg);
     background-size: cover;
   }
-  header .header-text {
+  .header .header-text {
     font-size: 3rem;
   }
   .about {
@@ -336,12 +336,12 @@ button {
   .contact .form-container {
     width: 31.25rem;
   }
-  footer {
+  .footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .footer-copyright {
+  .footer .footer-copyright {
     padding-right: 1rem;
   }
 }

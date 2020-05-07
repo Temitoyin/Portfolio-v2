@@ -29,7 +29,7 @@
     <title>Temitoyin Ayorinde:Frontend developer</title>
   </head>
   <body>
-    <nav>
+    <nav class="navigation">
       <p>Toyin</p>
       <ul>
         <li><a href="#about">About</a></li>
@@ -37,7 +37,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <header>
+    <header class="header">
       <div class="header-background"></div>
       <div class="header-text">
         <p>
@@ -115,19 +115,6 @@
           </div>
         </div>
       </section>
-      <!-- <section id="portfolio">
-        <div class="portfolio">
-          <div class="portfolio-heading">
-            <h4>Portfolio</h4>
-          </div>
-          <div class="portfolio-list">
-            <div class="portfolio_ls"></div>
-            <div class="portfolio_ls"></div>
-            <div class="portfolio_ls"></div>
-            <div class="portfolio_ls"></div>
-          </div>
-        </div>
-      </section> -->
       <section id="contact">
         <div class="contact">
           <div class="contact-header">
@@ -185,8 +172,10 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-copyright">Temitoyin © 2020 Copyright</div>
+    <footer class="footer">
+      <div class="footer-copyright">
+        Temitoyin © <span id="date"></span> Copyright
+      </div>
       <div class="socialmedia-icons">
         <a
           href="https://twitter.com/toyin_ayorinde"
@@ -214,5 +203,9 @@
       src="https://kit.fontawesome.com/291c73dd15.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var d = new Date();
+      document.getElementById("date").innerHTML = d.getFullYear();
+    </script>
   </body>
 </html>
