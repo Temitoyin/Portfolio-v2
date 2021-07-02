@@ -27,6 +27,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
   background-color: $color-dark;
   color: $color-white;
 
@@ -42,7 +46,7 @@ body {
       font-size: 0.8rem;
       display: inline;
       text-transform: uppercase;
-      padding-left: 1rem;
+      padding: 1rem;
 
       a {
         text-decoration: none;
@@ -55,6 +59,7 @@ body {
 // Header
 .header {
   height: 90vh;
+  padding-top: 3.875rem;
   .header-background {
     z-index: 1;
     height: 100%;
@@ -83,6 +88,7 @@ body {
 .about {
   height: 110vh;
   margin: 0rem 2rem;
+  padding-top: 3.875rem;
 
   .about-left {
     img {
@@ -101,7 +107,9 @@ body {
     }
   }
 }
-
+.portfolio{
+  padding-top: 3.875rem;
+}
 // Peoficiency
 .proficiency {
   margin: 0 2rem;
@@ -109,12 +117,12 @@ body {
 
   .proficiency-header {
     text-align: left;
-    text-transform: capitalize;
-    font-size: 1.5rem;
   }
 
   h2 {
     margin: 1rem 0;
+    text-transform: capitalize;
+    font-size: 2.5rem;
   }
 
   .categories {
@@ -136,7 +144,6 @@ body {
     }
   }
 }
-
 // Contact
 .contact {
   height: 50vh;
@@ -298,6 +305,40 @@ button {
 
   .proficiency {
     margin: 0rem 10rem 0 10rem;
+  }
+  .categories{
+    li{
+      padding: 0.625rem 0 !important;
+    }
+  }
+  .portfolio {
+    margin: 10rem 10rem 0rem 10rem;
+    height: 70vh;
+    .portfolio-header {
+      border-bottom: 1px solid black;
+      h4 {
+        margin: 1rem 0;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    }
+    .sites{
+      display: flex;
+      justify-content: space-between;
+      .projectWrapper{
+        width: 20rem;
+      }
+      .project-heading{
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .project-description{
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+    }
   }
 
   .contact {

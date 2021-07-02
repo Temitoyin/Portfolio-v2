@@ -30,6 +30,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
   background-color: #000;
   color: #fff;
 }
@@ -47,7 +51,7 @@ body {
   font-size: 0.8rem;
   display: inline;
   text-transform: uppercase;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .navigation ul li a {
@@ -57,6 +61,7 @@ body {
 
 .header {
   height: 90vh;
+  padding-top: 3.875rem;
 }
 
 .header .header-background {
@@ -87,6 +92,7 @@ body {
 .about {
   height: 110vh;
   margin: 0rem 2rem;
+  padding-top: 3.875rem;
 }
 
 .about .about-left img {
@@ -108,6 +114,10 @@ body {
   text-transform: capitalize;
 }
 
+.portfolio {
+  padding-top: 3.875rem;
+}
+
 .proficiency {
   margin: 0 2rem;
   margin-top: 10rem;
@@ -115,12 +125,12 @@ body {
 
 .proficiency .proficiency-header {
   text-align: left;
-  text-transform: capitalize;
-  font-size: 1.5rem;
 }
 
 .proficiency h2 {
   margin: 1rem 0;
+  text-transform: capitalize;
+  font-size: 2.5rem;
 }
 
 .proficiency .categories {
@@ -299,6 +309,43 @@ button {
   }
   .proficiency {
     margin: 0rem 10rem 0 10rem;
+  }
+  .categories li {
+    padding: 0.625rem 0 !important;
+  }
+  .portfolio {
+    margin: 10rem 10rem 0rem 10rem;
+    height: 70vh;
+  }
+  .portfolio .portfolio-header {
+    border-bottom: 1px solid black;
+  }
+  .portfolio .portfolio-header h4 {
+    margin: 1rem 0;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .portfolio .sites {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio .sites .projectWrapper {
+    width: 20rem;
+  }
+  .portfolio .sites .project-heading {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .portfolio .sites .project-description {
+    font-size: 14px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .contact {
     height: 50vh;
