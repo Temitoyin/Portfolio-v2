@@ -1,0 +1,410 @@
+$color-dark: #000;
+$color-white: #fff;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+textarea{
+  resize: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// Navigation
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  background-color: $color-dark;
+  color: $color-white;
+
+  p {
+    font-size: 1.4rem;
+    margin: 0.8rem 0;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      font-size: 0.8rem;
+      display: inline;
+      text-transform: uppercase;
+      padding: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+// Header
+.header {
+  height: 90vh;
+  padding-top: 3.875rem;
+  .header-background {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    margin-top: 0.5rem;
+    /* blur */
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+  .header-text {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 1.25rem;
+    text-align: center;
+  }
+}
+
+// About
+.about {
+  height: 110vh;
+  margin: 0rem 2rem;
+  padding-top: 3.875rem;
+
+  .about-left {
+    img {
+      display: flex;
+      justify-content: center;
+      height: 90%;
+      width: 100%;
+    }
+  }
+
+  .about-right {
+    line-height: 1.4rem;
+
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+}
+.portfolio{
+  padding-top: 3.875rem;
+}
+// Peoficiency
+.proficiency {
+  margin: 0 2rem;
+  margin-top: 10rem;
+
+  .proficiency-header {
+    text-align: left;
+  }
+
+  h2 {
+    margin: 1rem 0;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      text-transform: capitalize;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 0;
+      li {
+        display: block;
+        padding: 1rem 0 1rem 0;
+      }
+    }
+  }
+}
+// Contact
+.contact {
+  height: 50vh;
+  margin: 0 2rem;
+
+  .contact-header {
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    justify-content: space-around;
+    display: flex;
+
+    p {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+
+  .socialmedia-icons {
+    h5 {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+  .contact-content {
+    height: 50vh;
+    margin: 0rem 2rem;
+    text-align: center;
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .form-container {
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+
+    form {
+      label {
+        float: left;
+      }
+
+      input {
+        border: $color-dark solid 0.0625rem;
+        border-radius: 0.5rem;
+        height: 1.5rem;
+        margin: 0 0 0.8rem 0;
+
+        width: 100%;
+        clear: both;
+      }
+
+      textarea {
+        border: $color-dark solid 0.0625rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.8rem;
+        width: 100%;
+        clear: both;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  margin-top: 10rem;
+  height: 4.8vh;
+  display: flex;
+  justify-content: space-evenly;
+  color: $color-white;
+  background-color: $color-dark;
+
+  .footer-copyright {
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+
+  .socialmedia-icons {
+    i {
+      color: $color-white;
+    }
+  }
+}
+
+// Icons
+.socialmedia-icons {
+  a {
+    font-size: 1rem;
+    color: $color-dark;
+  }
+}
+
+// Buttons
+button {
+  border: $color-dark solid 0.0625rem;
+  background-color: $color-white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.anchor-btn {
+  border: 0.0625rem solid $color-dark;
+  background-color: $color-white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: black;
+}
+
+/* Media queries */
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  .navigation {
+    p {
+      font-size: 1.7rem;
+    }
+
+    ul {
+      li {
+        font-size: 1rem;
+      }
+    }
+  }
+  .header {
+    .header-background {
+      background-image: url(./images/background.jpg);
+      background-size: cover;
+    }
+
+    .header-text {
+      font-size: 3rem;
+    }
+  }
+
+  .about {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0 2rem;
+    margin: 5rem 10rem 0 10rem;
+
+    .about-left {
+      width: 100%;
+      height: 80%;
+    }
+
+    .about-right {
+      padding-left: 2rem;
+      line-height: 2rem;
+    }
+  }
+
+  .proficiency {
+    margin: 0rem 10rem 0 10rem;
+  }
+  .categories{
+    li{
+      padding: 0.625rem 0 !important;
+    }
+  }
+  .portfolio {
+    margin: 10rem 10rem 0rem 10rem;
+    height: 70vh;
+    .portfolio-header {
+      border-bottom: 1px solid black;
+      h4 {
+        margin: 1rem 0;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    }
+    .sites{
+      display: flex;
+      justify-content: space-between;
+      .projectWrapper{
+        width: 20rem;
+      }
+      .project-heading{
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .project-description{
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .contact {
+    height: 50vh;
+    margin: 5rem 10rem 0 10rem;
+
+    .contact-header {
+      margin-bottom: 1rem;
+      justify-content: center;
+      display: flex;
+
+      p {
+        padding-right: 1rem;
+        font-size: 2rem;
+        margin: 0;
+      }
+    }
+
+    .socialmedia-icons {
+      h5 {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .contact-content {
+      height: 40vh;
+      margin: 0 17rem;
+      text-align: center;
+      border: $color-dark 0.0625rem solid;
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+    .form-container {
+      width: 31.25rem;
+    }
+  }
+
+  .footer {
+    justify-content: center;
+
+    .footer-copyright {
+      padding-right: 1rem;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    .about-left {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
